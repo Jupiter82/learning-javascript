@@ -1,5 +1,5 @@
 let electricityBill;
-let totalUnitsConsumed = 200;
+let totalUnitsConsumed = 100;
 let remaningUnit = totalUnitsConsumed;
 let first = 20;
 let firstRate = 80;
