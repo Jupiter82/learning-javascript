@@ -1,3 +1,5 @@
+//done by alok
+
 let electricityBill;
 let totalUnitsConsumed = 100;
 let remaningUnit = totalUnitsConsumed;

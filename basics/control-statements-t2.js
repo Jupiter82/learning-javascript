@@ -9,25 +9,30 @@
 // for above all         => 39%
 
 // a. Calculate annual tax paid
-// b. Monthly tax paid
-// c. Annual net salary
-// d. Monthly net salary
+// b. Print Monthly tax paid
+// c. Print Annual net salary
+// d. Print Monthly net salary
 
 let salary = 5000000;
-let annualTaxSalary = 0 ;
+let totalTaxAmt = 0 ;
 
 if (salary<=500000) {
-    annualTaxSalary = salary * 0.01;
+    totalTaxAmt = salary * 0.01;
 }else if(salary<=700000){
-    annualTaxSalary =5000+ (salary-500000) * 0.15;
+    totalTaxAmt =5000+ (salary-500000) * 0.15;
 }else if (salary<=1000000) {
-    annualTaxSalary =30750+ (salary-700000) * 0.2;
+    totalTaxAmt =30750+ (salary-700000) * 0.2;
 }else if (salary<=2000000) {
-    annualTaxSalary = 99225+(salary-1000000) * 0.3;
+    totalTaxAmt = 99225+(salary-1000000) * 0.3;
 }else if(salary<=5000000){
-    annualTaxSalary = 329767.5+(salary-2000000) *0.36;
+    totalTaxAmt = 329767.5+(salary-2000000) *0.36;
 }else{
-    annualTaxSalary =1198716.3+ (salary-5000000) *0.39;
+    totalTaxAmt =1198716.3+ (salary-5000000) *0.39;
 }
 
-console.log(annualTaxSalary);
+console.log(totalTaxAmt);
+let netSalary = salary - totalTaxAmt
+console.log("Net Salary : ", netSalary)
+console.log("Annual Tax Paid : ", totalTaxAmt)
+console.log("Monthly Tax Paid : ", (totalTaxAmt/12))
+console.log("Monthly Net Salary:", (netSalary/12))
