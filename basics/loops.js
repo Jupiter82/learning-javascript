@@ -13,7 +13,7 @@ let i =1;
     // .some
     // .reduce
 
-
+//do-while
 do{
     //loop body
     console.log(i)
